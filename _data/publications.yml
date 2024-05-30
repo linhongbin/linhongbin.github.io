@@ -1,129 +1,121 @@
-main:
+- id: reconfusion
+  title: "ReconFusion: 3D Reconstruction with Diffusion Priors"
+  venue: arXiv, 2023
+  description: "Using an multi-view image conditioned diffusion model to regularize a NeRF enabled few-view reconstruction."
+  project_page: https://reconfusion.github.io
+  arxiv: 2312.02981
+  image: reconfusion_before.png
+  image_mouseover: reconfusion_after.mp4
+  authors:
+    - rundiwu
+    - bmild
+    - phenzler
+    - keunhong
+    - ruiqigao
+    - danielwatson
+    - pratuls
+    - dorverbin
+    - barron
+    - pooleb
+    - holynski
+- id: hypernerf
+  title: "CamP: Camera Preconditioning for Neural Radiance Fields"
+  venue: SIGGRAPH Asia, 2023
+  description: "Preconditioning camera optimization during NeRF training significantly improves their ability to jointly recover the scene and camera parameters."
+  project_page: "https://camp-nerf.github.io"
+  github: jonbarron/camp_zipnerf
+  arxiv: 2308.10902
+  image: camp_before.jpg
+  image_mouseover: camp_after.mp4
+  authors:
+    - keunhong
+    - phenzler
+    - bmild
+    - barron
+    - rmbrualla
+  awards:
+    - "Journal Paper"
 
-  - title: Adding 3D Geometry Control to Diffusion Models
-    authors: Wufei Ma*, Qihao Liu*, Jiahao Wang*, Xiaoding Yuan, Angtian Wang, Yi Zhang, Zihao Xiao, Guofeng Zhang, Beijia Lu, Ruxiao Duan, Yongrui Qi, Adam Kortylewski, <strong>Yaoyao Liu<sup><i class="fa-regular fa-envelope fa-xs"></i></sup></strong>, Alan Yuille <br>( <sup><i class="fa-regular fa-envelope fa-xs"></i></sup> Corresponding author)
-    conference_short: Preprint
-    conference: Under review.
-    pdf: https://arxiv.org/pdf/2306.08103.pdf
-    bibtex: https://bib.yliu.me/arXiv23_1.txt
-    image: https://img.yliu.me/teaser/dst.png
+- id: hypernerf
+  title: "HyperNeRF: A Higher-Dimensional Representation for Topologically Varying Neural Radiance Fields"
+  venue: SIGGRAPH Asia, 2021
+  description: "By applying ideas from level set methods, we can represent topologically changing scenes with NeRFs."
+  project_page: "https://hypernerf.github.io"
+  github: google/hypernerf
+  arxiv: 2106.13228
+  image: hypernerf_before.jpg
+  image_mouseover: hypernerf_after.mp4
+  authors:
+    - keunhong
+    - utsinh
+    - hedman
+    - barron
+    - sofien
+    - dgo
+    - rmbrualla
+    - smseitz
 
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu<sup><i class="fa-regular fa-envelope fa-xs"></i></sup></strong>, Zongwei Zhou<sup><i class="fa-regular fa-envelope fa-xs"></i></sup> <br>( <sup><i class="fa-regular fa-envelope fa-xs"></i></sup> Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://dblp.uni-trier.de/rec/conf/miccai/ZhangLCYLZ23.html?view=bibtex
-    image: https://img.yliu.me/teaser/miccai2023.png
-    notes: Early Accept
+- id: fignerf
+  title: "FiG-NeRF: Figure Ground Neural Radiance Fields for 3D Object Category Modelling "
+  venue: 3DV, 2021
+  description: "Given a lot of images of an object category, you can train a NeRF to render them from novel views and interpolate between different instances."
+  project_page: "https://fig-nerf.github.io"
+  arxiv: 2104.08418
+  image: fignerf_before.jpg
+  image_mouseover: fignerf_after.mp4
+  authors:
+    - chrisxie
+    - keunhong
+    - rmbrualla
+    - mtbr
 
-  - title: Continual Detection Transformer for Incremental Object Detection
-    authors: <strong>Yaoyao Liu</strong>, Bernt Schiele, Andrea Vedaldi, Christian Rupprecht
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2023.
-    pdf: https://www.robots.ox.ac.uk/~vgg/publications/2023/Liu23/liu23.pdf
-    code: https://github.com/yaoyao-liu/CL-DETR
-    page: https://lyy.mpi-inf.mpg.de/CL-DETR/
-    bibtex: https://dblp.uni-trier.de/rec/conf/cvpr/0001SV023.html?view=bibtex
-    image: https://img.yliu.me/teaser/cvpr23_1.png
+- id: nerfies
+  title: "Nerfies: Deformable Neural Radiance Fields"
+  venue: ICCV, 2021
+  description: "Learning deformation fields with a NeRF let's you reconstruct non-rigid scenes with high fidelity."
+  project_page: "https://nerfies.github.io"
+  github: google/nerfies
+  arxiv: 2011.12948
+  image: nerfies_before.jpg
+  image_mouseover: nerfies_after.mp4
+  authors:
+    - keunhong
+    - utsinh
+    - barron
+    - sofien
+    - dgo
+    - smseitz
+    - rmbrualla
+  awards:
+    - "Oral Presentation"
 
-  - title: Class-Incremental Exemplar Compression for Class-Incremental Learning
-    authors: Zilin Luo, <strong>Yaoyao Liu</strong>, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2023.
-    pdf: https://openaccess.thecvf.com/content/CVPR2023/papers/Luo_Class-Incremental_Exemplar_Compression_for_Class-Incremental_Learning_CVPR_2023_paper.pdf
-    code: https://github.com/xfflzl/CIM-CIL
-    page: https://class-il.mpi-inf.mpg.de/CIM/
-    bibtex: https://dblp.uni-trier.de/rec/conf/cvpr/Luo0SS23.html?view=bibtex
-    image: https://img.yliu.me/teaser/cvpr23_2.png
+- id: latentfusion
+  title: "LatentFusion: End-to-End Differentiable Reconstruction and Rendering for Unseen Object Pose Estimation "
+  venue: CVPR, 2020
+  description: "By learning to predict geometry from images, you can do zero-shot pose estimation with a single network."
+  project_page: "https://latentfusion.github.io"
+  github: NVlabs/latentfusion
+  arxiv: 1912.00416
+  image: latentfusion_before.jpg
+  image_mouseover: latentfusion_after.mp4
+  authors:
+    - keunhong
+    - amousavian
+    - yux
+    - fox
 
-  - title: Online Hyperparameter Optimization for Class-Incremental Learning
-    authors: <strong>Yaoyao Liu</strong>, Yingying Li, Bernt Schiele, Qianru Sun
-    conference_short: AAAI
-    conference: AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2301.05032.pdf
-    code: https://github.com/yaoyao-liu/online-hyperparameter-optimization/
-    page: https://class-il.mpi-inf.mpg.de/online-hyperparameter-optimization/
-    bibtex: https://dblp.uni-trier.de/rec/conf/aaai/0001LSS23.html?view=bibtex
-    notes: Oral Presentation
-    image: https://img.yliu.me/teaser/OnlineHyperparameters.png
-
-  - title: Meta-Transfer Learning through Hard Tasks
-    authors: Qianru Sun*, <strong>Yaoyao Liu*</strong>, Zhaozheng Chen, Tat-Seng Chua, Bernt Schiele <br> (* Equal contribution)
-    conference_short: TPAMI
-    conference: IEEE Transactions on Pattern Analysis and Machine Intelligence <strong>(TPAMI)</strong>, Volume 44, Number 3, 2022.
-    pdf: https://lyy.mpi-inf.mpg.de/preprints/Meta_Transfer_Learning_through_Hard_Tasks.pdf
-    code: https://github.com/yaoyao-liu/meta-transfer-learning
-    page: https://lyy.mpi-inf.mpg.de/mtl/
-    bibtex: https://dblp.uni-trier.de/rec/journals/pami/SunLCCS22.html?view=bibtex
-    image: https://img.yliu.me/teaser/MTL_PAMI.png
-
-  - title: "RMM: Reinforced Memory Management for Class-Incremental Learning"
-    authors: <strong>Yaoyao Liu</strong>, Bernt Schiele, Qianru Sun
-    conference_short: NeurIPS
-    conference: Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2021.
-    pdf: https://arxiv.org/pdf/2301.05792.pdf
-    code: https://gitlab.mpi-klsb.mpg.de/yaoyaoliu/rmm/
-    page: https://class-il.mpi-inf.mpg.de/rmm/
-    bibtex: https://dblp.uni-trier.de/rec/conf/nips/LiuSS21.html?view=bibtex
-    image: https://img.yliu.me/teaser/RMM.png
-
-  - title: Adaptive Aggregation Networks for Class-Incremental Learning
-    authors: <strong>Yaoyao Liu</strong>, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2021.
-    pdf: https://arxiv.org/pdf/2010.05063.pdf
-    code: https://git.io/JYHyt
-    page: https://class-il.mpi-inf.mpg.de/
-    bibtex: https://dblp.uni-trier.de/rec/conf/cvpr/LiuSS21.html?view=bibtex
-    image: https://img.yliu.me/teaser/AANets.png
-    others: '<a href="https://github.com/yaoyao-liu/class-incremental-learning/tree/main/adaptive-aggregation-networks" target="_blank" rel="noopener"><strong> <i style="color:#e74d3c; font-weight:600" id="githubstars_manets"></i><i style="color:#e74d3c; font-weight:600"> GitHub Stars</i></strong></a><script>githubStars("yaoyao-liu/class-incremental-learning", function(stars) {var startext = document.getElementById("githubstars_manets"); startext.innerHTML=stars;});</script>'
-
-  - title: Learning to Teach and Learn for Semi-supervised Few-shot Image Classification
-    authors: Xinzhe Li, Jianqiang Huang, <strong>Yaoyao Liu</strong>, Qin Zhou, Shibao Zheng, Bernt Schiele, Qianru Sun
-    conference_short: CVIU
-    conference: Computer Vision and Image Understanding <strong>(CVIU)</strong>, Volume 212, 2021.
-    pdf: https://lyy.mpi-inf.mpg.de/preprints/Learning_to_Teach_and_Learn_for_Semi_Supervised_Few_Shot_Image_Classification.pdf
-    code: https://github.com/xinzheli1217/learning-to-self-train
-    bibtex: https://dblp.uni-trier.de/rec/journals/cviu/LiHLZZSS21.html?view=bibtex
-    image: https://img.yliu.me/teaser/LTTL.png
-
-  - title: Generating Face Images with Attributes for Free
-    authors: <strong>Yaoyao Liu</strong>, Qianru Sun, Xiangnan He, An-An Liu, Yuting Su, Tat-Seng Chua
-    conference_short: TNNLS
-    conference: IEEE Transactions on Neural Networks and Learning Systems <strong>(TNNLS)</strong>, Volume 32, Number 6, 2021.
-    pdf: https://ieeexplore.ieee.org/abstract/document/9146375
-    bibtex: https://dblp.uni-trier.de/rec/journals/tnn/LiuSHLSC21.html?view=bibtex
-    image: https://img.yliu.me/teaser/tnnls.png
-
-  - title: An Ensemble of Epoch-wise Empirical Bayes for Few-shot Learning
-    authors: <strong>Yaoyao Liu</strong>, Bernt Schiele, Qianru Sun
-    conference_short: ECCV
-    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2020.
-    pdf: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123610392.pdf
-    code: https://gitlab.mpi-klsb.mpg.de/yaoyaoliu/e3bm
-    page: https://lyy.mpi-inf.mpg.de/e3bm/
-    bibtex: https://dblp.uni-trier.de/rec/conf/eccv/LiuSS20.html?view=bibtex
-    image: https://img.yliu.me/teaser/E3BM.png
-
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: https://img.yliu.me/teaser/mnemonics.png
-
-  - title: Learning to Self-Train for Semi-Supervised Few-Shot Classification
-    authors: Xinzhe Li, Qianru Sun, <strong>Yaoyao Liu</strong>, Shibao Zheng, Qin Zhou, Tat-Seng Chua, Bernt Schiele
-    conference_short: NeurIPS
-    conference: Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2019.
-    pdf: https://papers.nips.cc/paper/2019/file/bf25356fd2a6e038f1a3a59c26687e80-Paper.pdf
-    code: https://github.com/xinzheli1217/learning-to-self-trai
-    page: https://lyy.mpi-inf.mpg.de/lst/
-    bibtex: https://dblp.uni-trier.de/rec/conf/nips/LiSLZZCS19.html?view=bibtex
-    image: https://img.yliu.me/teaser/LST.png
+- id: photoshape
+  title: "PhotoShape: Photorealistic Materials for Large-Scale Shape Collections"
+  venue: SIGGRAPH Asia, 2018
+  description: "By pairing large collections of images, 3D models, and materials, you can create thousands of photorealistic 3D models fully automatically."
+  project_page: "https://photoshape.github.io"
+  github: keunhong/photoshape
+  arxiv: 1809.09761
+  image: photoshape.jpg
+  authors:
+    - keunhong
+    - krematas
+    - ali
+    - smseitz
+  awards:
+    - "Journal Cover"

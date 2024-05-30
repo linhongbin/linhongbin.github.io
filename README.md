@@ -1,40 +1,8 @@
-# yaoyao-liu.github.io
+# keunhong.github.io
 
-[![LICENSE](https://img.shields.io/github/license/yaoyao-liu/minimal-light?style=flat-square&logo=creative-commons&color=EF9421)](https://github.com/yaoyao-liu/yaoyao-liu.github.io/blob/main/LICENSE)
+- Feel free to borrow this template.
+- Make sure to update all relevant fields in `_config.yml` and `_data`.
 
-This is the latest version of my homepage's source code. Feel free to use and share.
-<br />
-For more details, please refer to this repository: <https://github.com/yaoyao-liu/minimal-light>.
+# License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
-### Using Locally with Jekyll
-
-You need to install [Ruby](https://www.ruby-lang.org/en/) and [Jekyll](https://jekyllrb.com/) fisrt.
-
-Install and run:
-
-```bash
-bundle install
-bundle exec jekyll server
-```
-View the live page using `localhost`:
-<http://localhost:4000>. You can get the html files in the `_site` folder.
-
-### Google Scholar Crawler
-
-The instructions for the Google Scholar crawler can be found in [this repository](https://github.com/RayeRen/acad-homepage.github.io).
-<br>
-Before using that, you need to change the Google Scholar ID in the following file:
-https://github.com/yaoyao-liu/yaoyao-liu.github.io/blob/7d16d828a229580815428782fb74d937710eb50e/google_scholar_crawler/main.py#L7
-
-
-### Acknowledgements
-
-This project uses the source code from the following repositories:
-
-* [pages-themes/minimal](https://github.com/pages-themes/minimal)
-
-* [orderedlist/minimal](https://github.com/orderedlist/minimal)
-
-* [al-folio](https://github.com/alshedivat/al-folio)
-
-* [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io)
