@@ -1,11 +1,14 @@
-- name: University of Washington 
+- name: The Chinese University of Hong Kong
   description: >-
-    Ph. D in Computer Science, advised by <a href="https://smseitz.com">Steven M. Seitz</a> and
-    <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>.<br />
-    Supported by Samsung Scholarship 2015-2020 ($50,000/year for 5 years)
-  dates: Fall 2015 - Spring 2022
+    Ph. D. in Mechanical and Automation Engineering, supervised by <a href="https://smseitz.com">Kwok Wai Sameul Au </a>
+  dates: November 2020 - Now
 
-- name: University of Illinois at Urbana-Champaign
+- name: The Chinese University of Hong Kong
   description: >-
-    B.S. in Computer Science, advised by <a href="https://dhoiem.cs.illinois.edu/">Derek Hoiem</a>.
-  dates: Fall 2009 - Spring 2013
+    M. sc. in Mechanical and Automation Engineering
+  dates: September 2017 - November 2018
+
+- name: Guangdong University of Technology
+  description: >-
+    B. S. in Mechanical and Automation Engineering
+  dates: September 2013 - August 2017
