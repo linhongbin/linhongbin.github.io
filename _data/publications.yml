@@ -30,8 +30,23 @@
     - douqi
     - liuyunhui
 
+- id: needlepick
+  title: "End-to-end learning of deep visuomotor policy for needle picking"
+  venue: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023
+  # description: "Grasping any surgical objects with high generality and robustness"
+  project_page: https://sites.google.com/view/DreamerfD
+  arxiv: 2303.03675
+  image: needlepick_before.png
+  image_mouseover: needlepick.mp4
+  authors: 
+    - linhongbin
+    - libin
+    - chuxiangyu
+    - douqi
+    - liuyunhui
+    - ausamuel
 
-    
+
 # - id: reconfusion
 #   title: "ReconFusion: 3D Reconstruction with Diffusion Priors"
 #   venue: arXiv, 2023
