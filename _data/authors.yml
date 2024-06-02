@@ -6,7 +6,7 @@ linhongbin:
 libin:
   first_name: Bin
   last_name: Li
-  is_me: true
+  # is_me: true
 wongchunwai:
   first_name: Chun Wai
   last_name: Wong
