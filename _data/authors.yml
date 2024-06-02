@@ -6,6 +6,7 @@ linhongbin:
 libin:
   first_name: Bin
   last_name: Li
+  website: https://scholar.google.com/citations?user=eTrk2XQAAAAJ&hl=zh-CN
   # is_me: true
 wongchunwai:
   first_name: Chun Wai
@@ -14,15 +15,37 @@ wongchunwai:
 juanrojas:
   first_name: Juan 
   last_name: Rojas
-  # website: https://smseitz.com
+  website: https://www.lipscomb.edu/directory/rojas-juan
 chuxiangyu:
   first_name: Xiangyu
   last_name: Chu
-  # website: https://homes.cs.washington.edu/~ali/
+  website: https://xiangyuchu.netlify.app/
 ausamuel:
   first_name: Kwok Wai Samuel
   last_name: Au
-  # website: https://krematas.com
+  website: https://biomedirobotics.com/au-kwok-wai-samuel/
+
+lubo:
+  first_name: bo
+  last_name: lu
+  website: https://lu-bo.github.io/
+wangyaxiang:
+  first_name: Yaxing
+  last_name: Wang
+  # website: https://lu-bo.github.io/
+zhongfangxun:
+  first_name: Fangxun
+  last_name: Zhong
+  website: https://billyzhonghk.wixsite.com/billyzhong
+douqi:
+  first_name: Qi
+  last_name: Dou
+  website: https://www.cse.cuhk.edu.hk/~qdou/
+liuyunhui:
+  first_name: Yunhui
+  last_name: Liu
+  website: https://www4.mae.cuhk.edu.hk/peoples/liu-yun-hui/
+
 # barron:
 #   first_name: Jonathan
 #   middle_name: T.

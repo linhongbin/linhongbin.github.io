@@ -13,6 +13,25 @@
     - juanrojas
     - chuxiangyu
     - ausamuel
+- id: needletrack
+  title: "On the Monocular 3D Pose Estimation for Arbitrary Shaped Needle in Dynamic Scenes: An Efficient Visual Learning and Geometry Modeling Approach"
+  venue: IEEE Transactions on Medical Robotics and Bionics, 2024
+  # description: "Grasping any surgical objects with high generality and robustness"
+  # project_page: https://linhongbin.github.io/gas/
+  # arxiv: 2405.17940
+  image: needletrack.png
+  # image_mouseover: gas.mp4
+  authors: 
+    - libin
+    - lubo
+    - linhongbin
+    - wangyaxiang
+    - zhongfangxun
+    - douqi
+    - liuyunhui
+
+
+    
 # - id: reconfusion
 #   title: "ReconFusion: 3D Reconstruction with Diffusion Priors"
 #   venue: arXiv, 2023
