@@ -1,6 +1,6 @@
 - id: gas
   title: "World Models for General Surgical Grasping"
-  venue: RSS, 2024
+  venue: "Robotics: Science and Systems (RSS), 2024"
   description: "Grasping any surgical objects with high generality and robustness"
   project_page: https://linhongbin.github.io/gas/
   arxiv: 2405.17940
@@ -46,6 +46,52 @@
     - liuyunhui
     - ausamuel
 
+- id: accelnet
+  title: "Open-source High-precision Autonomous Suturing Framework With Visual Guidance"
+  venue: "IEEE Int. Conf. Robotics and Automation (ICRA) Workshop on "A Panacea Or An Alchemy? Benefits And Risks Of Robot Learning In Medical Applications", 2022"
+  # description: "Grasping any surgical objects with high generality and robustness"
+  project_page: https://sites.google.com/view/accel-2022-cuhk
+  arxiv: 2210.01406
+  image: needlepick_before.png
+  image_mouseover: needlepick.mp4
+  authors: 
+    - linhongbin
+    - libin
+    - liuyunhui
+    - ausamuel
+
+- id: physicaldistilation
+  title: "Learning deep nets for gravitational dynamics with unknown disturbance through physical knowledge distillation: Initial feasibility study"
+  venue: "IEEE Robotics and Automation Letters, 2021 (presented on ICRA 2021)"
+  # description: "Grasping any surgical objects with high generality and robustness"
+  project_page: https://biomedirobotics.com/physical-knowledge-distillation/
+  arxiv: 2210.01398
+  image: needlepick_before.png
+  image_mouseover: needlepick.mp4
+  authors: 
+    - linhongbin
+    - gaoqian
+    - chuxiangyu
+    - douqi
+    - deguetanton
+    - kazanzidespeter
+    - ausamuel
+
+- id: gc
+  title: "A reliable gravity compensation control strategy for dVRK robotic arms with nonlinear disturbance forces"
+  venue: "IEEE Robotics and Automation Letters, 2019 (presented on IROS 2019)"
+  # description: "Grasping any surgical objects with high generality and robustness"
+  project_page: https://biomedirobotics.com/gravity-compensation-for-dvrk/
+  arxiv: 2001.06156
+  image: needlepick_before.png
+  image_mouseover: needlepick.mp4
+  authors: 
+    - linhongbin
+    - vincent
+    - wangyan
+    - deguetanton
+    - kazanzidespeter
+    - ausamuel
 
 # - id: reconfusion
 #   title: "ReconFusion: 3D Reconstruction with Diffusion Priors"

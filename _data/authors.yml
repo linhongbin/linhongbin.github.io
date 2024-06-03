@@ -46,6 +46,31 @@ liuyunhui:
   last_name: Liu
   website: https://www4.mae.cuhk.edu.hk/peoples/liu-yun-hui/
 
+deguetanton:
+  first_name: Anton 
+  last_name: Deguet
+  website: https://www.linkedin.com/in/anton-deguet-53381814/
+
+kazanzidespeter:
+  first_name: Peter
+  last_name: Kazanzides
+  website: https://www.cs.jhu.edu/faculty/peter-kazanzides/
+
+gaoqian:
+  first_name: Qian
+  last_name: Gao
+  website: https://rail.cuhk.edu.cn/people/288
+    - vincent
+    - wangyan
+
+vincent:
+  first_name: Chiu-Wai Vincent 
+  last_name: Hui
+  website: https://ieeexplore.ieee.org/author/37089302073
+wangyan:
+  first_name: Yan,
+  last_name: Wang
+  website: https://scholar.google.com/citations?user=OJjJPyAAAAAJ&hl=en
 # barron:
 #   first_name: Jonathan
 #   middle_name: T.
