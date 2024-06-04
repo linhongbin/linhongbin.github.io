@@ -13,6 +13,7 @@
     - juanrojas
     - chuxiangyu
     - ausamuel
+    
 - id: needletrack
   title: "On the Monocular 3D Pose Estimation for Arbitrary Shaped Needle in Dynamic Scenes: An Efficient Visual Learning and Geometry Modeling Approach"
   venue: IEEE Transactions on Medical Robotics and Bionics, 2024
