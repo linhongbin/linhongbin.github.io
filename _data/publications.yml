@@ -5,7 +5,7 @@
   project_page: https://linhongbin.github.io/gas/
   arxiv: 2405.17940
   image: gas_before.png
-  image_mouseover: gas.mp4
+  image_mouseover: gas_1.mp4
   authors: 
     - linhongbin
     - libin
@@ -53,7 +53,7 @@
   project_page: https://sites.google.com/view/accel-2022-cuhk
   arxiv: 2210.01406
   image: acel_before.png
-  image_mouseover: acel.mp4
+  image_mouseover: acel_1.mp4
   authors: 
     - linhongbin
     - libin
@@ -66,8 +66,8 @@
   # description: "Grasping any surgical objects with high generality and robustness"
   project_page: https://biomedirobotics.com/physical-knowledge-distillation/
   arxiv: 2210.01398
-  image: needlepick_before.png
-  image_mouseover: needlepick.mp4
+  image: pkd_before.png
+  image_mouseover: pkd_1.mp4
   authors: 
     - linhongbin
     - gaoqian
@@ -83,8 +83,8 @@
   # description: "Grasping any surgical objects with high generality and robustness"
   project_page: https://biomedirobotics.com/gravity-compensation-for-dvrk/
   arxiv: 2001.06156
-  image: needlepick_before.png
-  image_mouseover: needlepick.mp4
+  image: gc_before.png
+  image_mouseover: gc_1.mp4
   authors: 
     - linhongbin
     - vincent
