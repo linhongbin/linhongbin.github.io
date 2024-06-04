@@ -27,7 +27,7 @@ description: >-
 
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://keunhong.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "linhongbin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: hongbinlin_ben
 github_username: linhongbin
 google_scholar: 9K1iBJwAAAAJ
