@@ -23,7 +23,7 @@ name: Hongbin Lin
 position: Ph.D. Student
 email: Hongbinlin@link.cuhk.edu.hk
 description: >-
-  I am a Ph.D. student at the Chinese University of Hong Kong with [Kwok Wai Samuel Au](https://biomedirobotics.com/au-kwok-wai-samuel/). I am interested in the intersection of Robotics and AI. The focus of my current research is Deep Reinforcement Learning and its applications in surgical autonomy. 
+  I am a Ph.D. student at the Chinese University of Hong Kong supervised by Prof. [Kwok Wai Samuel Au](https://biomedirobotics.com/au-kwok-wai-samuel/). My research focus is reinforcement learning, surgical autonomy and robot dynamic modeling. I am interested in building pracitcal, robust, and general AI-based frameworks for robots.
 
 
 baseurl: "" # the subpath of your site, e.g. /blog
