@@ -2,202 +2,269 @@
 layout: null
 ---
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta charset="utf-8">
+<title>Hongbin (Ben) Lin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>{{ site.name }}</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+<style>
+:root {
+  --text-main: #0f0f0f;
+  --text-secondary: #5a5a5a;
+  --border-light: #eaeaea;
+  --bg-soft: #fafafa;
+}
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+* {
+  box-sizing: border-box;
+}
 
-    gtag('js', new Date());
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+               "Inter", system-ui, sans-serif;
+  color: var(--text-main);
+  background: #ffffff;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
 
-    gtag('config', '{{ site.google_analytics }}');
-  </script>
+a {
+  color: var(--text-main);
+  text-decoration: none;
+}
 
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
-  <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
-  <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
+a:hover {
+  opacity: 0.6;
+}
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script defer src="{{ '/js/fontawesome.all.min.js' | relative_url }}"></script>
-  <script src="{{ '/js/index.js' | relative_url }}"></script>
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+  padding: 120px 0 80px;
+}
+
+.hero-inner {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+}
+
+.portrait img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  background: var(--bg-soft);
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin-bottom: 28px;
+}
+
+.links a {
+  margin-right: 22px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* ---------- DIVIDER ---------- */
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border-light);
+  margin: 80px 0;
+}
+
+/* ---------- PUBLICATIONS ---------- */
+
+h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 48px;
+}
+
+.pub {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 32px;
+  padding: 28px;
+  margin-bottom: 32px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid var(--border-light);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pub:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.06);
+}
+
+.pub-media {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.pub-media img,
+.pub-media video {
+  width: 100%;
+  display: block;
+}
+
+.pub-media video {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.pub:hover .pub-media video {
+  opacity: 1;
+}
+
+.pub-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.pub-authors {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.pub-venue {
+  font-size: 0.9rem;
+  color: #7a7a7a;
+  margin-bottom: 12px;
+}
+
+.pub-links a {
+  font-size: 0.9rem;
+  margin-right: 18px;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  margin: 120px 0 60px;
+  font-size: 0.85rem;
+  color: #8a8a8a;
+  text-align: center;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 760px) {
+  .hero {
+    padding-top: 80px;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .pub {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <section class="hero">
-    <div class="hero-body container is-max-desktop">
-      <div class="columns is-vcentered">
+{% assign img = '/images/' | relative_url %}
 
-        <div class="column is-4">
-          <div class="portrait">
-            <img src="{{ '/images/portrait.jpg' | relative_url }}" />
-          </div>
-        </div>
-
-        <div class="column">
-          <h1 class="title">
-            <b>Hello, I'm Hongbin (Ben) Lin</b>
-          </h1>
-          <div class="content has-text-justified">
-            {{ site.description | markdownify }}
-            <div class="buttons">
-              <a class="external-link button is-light" href="cv.html">
-                <span class="icon"><i class="fas fa-file"></i></span>
-                <span>CV</span>
-              </a>
-
-              <a class="external-link button is-light"
-                href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-                <span class="icon"><i class="ai ai-google-scholar"></i></span>
-                <span>Scholar</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}">
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>Github</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://twitter.com/{{ site.twitter_username }}">
-                <span class="icon"><i class="fab fa-twitter"></i></span>
-                <span>Twitter</span>
-              </a>
-            </div>
-
-          </div>
-        </div>
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="portrait">
+      <img src="{{ img }}portrait.jpg" alt="Portrait of Hongbin Lin">
+    </div>
+    <div>
+      <h1>Hello, I’m Hongbin (Ben) Lin</h1>
+      <div class="subtitle">
+        Ph.D. student at The Chinese University of Hong Kong.<br>
+        Working on robotic manipulation, surgical autonomy, and visuomotor learning.
+      </div>
+      <div class="links">
+        <a href="cv.html">CV</a>
+        <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+        <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}">Scholar</a>
+        <a href="mailto:{{ site.email }}">Email</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- News. -->
-  <div class="hr">
-    <div class="container">
-      <hr>
+<hr>
+
+<section class="container">
+  <h2>Selected Publications</h2>
+
+  <div class="pub">
+    <div class="pub-media">
+      <img src="{{ img }}gc_before.png">
+      <video autoplay muted loop playsinline>
+        <source src="{{ img }}gc.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div>
+      <div class="pub-title">World Models for General Surgical Grasping</div>
+      <div class="pub-authors">Hongbin Lin et al.</div>
+      <div class="pub-venue">Robotics: Science and Systems (RSS)</div>
+      <div class="pub-links">
+        <a href="#">Project</a>
+        <a href="#">Code</a>
+      </div>
     </div>
   </div>
 
-  <section class="section">
-    <div class="container is-max-desktop">
-
-      <!--<h2 class="title is-3">News</h2>
-      <div class="content">
-        <ul>
-          {% for news in site.data.news %}
-          <li>
-            <b>{{ news.date }}</b>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
-          </li>
-          {% endfor %}
-        </ul>
-      </div>-->
-
-      <h2 class="title is-3">Highlight Publications</h2>
-
-      {% for publication in site.data.publications %}
-      <div class="publication-block columns">
-
-        <div class="column is-2">
-          <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
-            {% if publication.image_mouseover contains "mp4" %}
-            <video autoplay preload playsinline class="" height="100%" loop muted width="100%">
-              <source src="./images/{{ publication.image_mouseover }}" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            {% endif %}
-            <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" />
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="content">
-            <h3 class="publication-title"><a href="{{ publication.project_page }}">{{ publication.title }}</a></h3>
-            <div class="publication-authors">
-              {% for author_id in publication.authors %}
-              {% assign author = site.data.authors[author_id] %}
-              <span class="author-block {% if author.is_me %}author-me{% endif %}">
-                {% if author.is_me %}
-                {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if forloop.last == false %},{%
-                endif %}
-                {% else %}
-                <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
-                  }}</a>{% if forloop.last == false %},{% endif %}
-                {% endif %}
-              </span>
-              {% endfor %}
-            </div>
-            <div class="publication-venue">
-              <span>{{ publication.venue }}</span>
-              {% for award in publication.awards %}
-                <span class="publication-venue-emph">{{ award }}<span>
-              {% endfor %}
-            </div>
-            <p class="publication-description">{{ publication.description }}</p>
-            <!-- Publication Links. -->
-            <div class="publication-links buttons field has-addons">
-              <a class="external-link button is-small is-ghost" href="{{ publication.project_page }}">
-                <span class="icon"><i class="fas fa-globe-asia"></i></span>
-                <span>Project Page</span>
-              </a>
-              <!-- <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
-                <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                <span>PDF</span>
-              </a> -->
-              <!-- <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/{{ publication.arxiv }}">
-                <span class="icon"><i class="ai ai-arxiv"></i></span>
-                <span>arXiv</span>
-              </a> -->
-              {% if publication.github %}
-              <a class="external-link button is-small is-ghost" href="https://github.com/{{ publication.github }}">
-                <span class="icon"><i class="fa fab fa-github"></i></span>
-                <span>Code</span>
-              </a>
-              {% endif %}
-            </div>
-            <!--/ Publication Links. -->
-          </div>
-        </div>
-      </div>
-      {% endfor %}
+  <div class="pub">
+    <div class="pub-media">
+      <img src="{{ img }}acel_before.png">
+      <video autoplay muted loop playsinline>
+        <source src="{{ img }}acel.mp4" type="video/mp4">
+      </video>
     </div>
-  </section>
-
-
-  <footer class="footer">
-    <div class="container">
-      <div class="content footer-links has-text-centered">
-        <a href="mailto:{{ site.email }}">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a class="external-link" href="https://github.com/{{ site.github_username }}">
-          <i class="fab fa-github"></i>
-        </a>
-        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-          <i class="ai ai-google-scholar"></i>
-        </a>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>
-              Feel free to <a href="https://github.com/keunhong/keunhong.github.io">borrow this template</a>.
-            </p>
-          </div>
-        </div>
+    <div>
+      <div class="pub-title">Learning Deep Visuomotor Policies for Needle Picking</div>
+      <div class="pub-authors">Hongbin Lin et al.</div>
+      <div class="pub-venue">IROS</div>
+      <div class="pub-links">
+        <a href="#">Project</a>
+        <a href="#">Video</a>
       </div>
     </div>
-  </footer>
+  </div>
+
+</section>
+
+<footer>
+  © {{ site.time | date: "%Y" }} Hongbin Lin
+</footer>
 
 </body>
-
 </html>
