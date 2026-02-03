@@ -206,14 +206,16 @@ footer {
     <div>
       <h1>Hello, I’m Hongbin (Ben) Lin</h1>
       <div class="subtitle">
-        Ph.D. student at The Chinese University of Hong Kong.<br>
-        Working on robotic manipulation, surgical autonomy, and visuomotor learning.
+        I am currently working at a Chinese embodied AI startup, Knowin.AI, as a Robotics Manipulation Engineer.
+Previously, I obtained my PhD from The Chinese University of Hong Kong, supervised by <a href="https://biomedirobotics.com/au-kwok-wai-samuel/">Prof. Kwok Wai Samuel Au</a>.
+My research focuses on reinforcement learning, surgical autonomy, and robot dynamics modeling.
+I am interested in building AI-based software solutions for robotics.
       </div>
       <div class="links">
-        <a href="cv.html">CV</a>
-        <a href="https://github.com/{{ site.github_username }}">GitHub</a>
-        <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}">Scholar</a>
-        <a href="mailto:{{ site.email }}">Email</a>
+        <a href="{{ '/pdf/ben_cv.pdf' | relative_url }}">CV</a>
+        <a href="https://github.com/linhongbin">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=9K1iBJwAAAAJ&hl=zh-TW">Scholar</a>
+        <a href="mailto:{{hongbinlin@link.cuhk.edu.hk}}">Email</a>
       </div>
     </div>
   </div>
@@ -222,25 +224,101 @@ footer {
 <hr>
 
 <section class="container">
-  <h2>Selected Publications</h2>
+  <h2>Publications</h2>
 
   <div class="pub">
     <div class="pub-media">
-      <img src="{{ img }}gc_before.png">
+      <img src="{{ img }}mea.png">
       <video autoplay muted loop playsinline>
-        <source src="{{ img }}gc.mp4" type="video/mp4">
+        <source src="{{ img }}mea.png" ">
+      </video>
+    </div>
+    <div>
+      <div class="pub-title"> Multi-Group Equivariant Augmentation for Reinforcement Learning in Robot Manipulation
+       </div>
+      <div class="pub-authors">Hongbin Lin, Juan Rojas, Kwok Wai Samuel Au</div>
+      <div class="pub-venue">adXiv, 2025</div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2508.11204">Paper</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-media">
+      <img src="{{ img }}gasv2.png">
+      <video autoplay muted loop playsinline>
+        <source src="{{ img }}gasv2.png"">
+      </video>
+    </div>
+    <div>
+      <div class="pub-title"> Visuomotor Grasping with World Models for Surgical Robots
+       </div>
+      <div class="pub-authors">Hongbin Lin, Bin Li, Kwok Wai Samuel Au</div>
+      <div class="pub-venue">adXiv, 2025</div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2508.11200">Paper</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="pub">
+    <div class="pub-media">
+      <img src="{{ img }}gas_before.png">
+      <video autoplay muted loop playsinline>
+        <source src="{{ img }}gas_1.mp4" type="video/mp4">
       </video>
     </div>
     <div>
       <div class="pub-title">World Models for General Surgical Grasping</div>
-      <div class="pub-authors">Hongbin Lin et al.</div>
-      <div class="pub-venue">Robotics: Science and Systems (RSS)</div>
+      <div class="pub-authors">Hongbin Lin, Bin Li, Chun Wai Wong, Juan Rojas, Xiangyu Chu, Kwok Wai Samuel Au</div>
+      <div class="pub-venue">Robotics Science and Systems (RSS), 2024</div>
       <div class="pub-links">
-        <a href="#">Project</a>
-        <a href="#">Code</a>
+        <a href="https://linhongbin.github.io/gas/">Project</a>
+        <a href="https://github.com/linhongbin/gas">Code</a>
       </div>
     </div>
   </div>
+
+
+
+  <div class="pub">
+    <div class="pub-media">
+      <img src="{{ img }}needletrack.png">
+      <video autoplay muted loop playsinline>
+        <source src="{{ img }}needletrack.png"">
+      </video>
+    </div>
+    <div>
+      <div class="pub-title">On the Monocular 3D Pose Estimation for Arbitrary Shaped Needle in Dynamic Scenes: An Efficient Visual Learning and Geometry Modeling Approach</div>
+      <div class="pub-authors">Bin Li, Bo Lu, Hongbin Lin, Yaxiang Wang, Fangxun Zhong, Qi Dou, Yunhui Liu</div>
+      <div class="pub-venue">IEEE Transactions on Medical Robotics and Bionics, 2024</div>
+      <div class="pub-links">
+        <a href="https://ieeexplore.ieee.org/iel7/8253409/8627956/10472639.pdf">Paper</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-media">
+      <img src="{{ img }}needlepick_before.png">
+      <video autoplay muted loop playsinline>
+        <source src="{{ img }}needlepick_1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div>
+      <div class="pub-title">End-to-end learning of deep visuomotor policy for needle picking</div>
+      <div class="pub-authors">Hongbin Lin, Bin Li, Xiangyu Chu, Qi Dou, Yunhui Liu and Kwok Wai Samuel Au</div>
+      <div class="pub-venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023</div>
+      <div class="pub-links">
+        <a href="https://sites.google.com/view/DreamerfD">Project</a>
+        <a href="https://github.com/linhongbin/gym-np">Code</a>
+        <a href="https://arxiv.org/abs/2303.03675">Paper</a>
+      </div>
+    </div>
+  </div>
+
 
   <div class="pub">
     <div class="pub-media">
@@ -250,12 +328,51 @@ footer {
       </video>
     </div>
     <div>
-      <div class="pub-title">Learning Deep Visuomotor Policies for Needle Picking</div>
-      <div class="pub-authors">Hongbin Lin et al.</div>
-      <div class="pub-venue">IROS</div>
+      <div class="pub-title">Open-source High-precision Autonomous Suturing Framework With Visual Guidance</div>
+      <div class="pub-authors">Hongbin Lin, Bin Li, Yunhui Liu, Kwok Wai Samuel Au</div>
+      <div class="pub-venue">IEEE Int. Conf. Robotics and Automation (ICRA) Workshop, 2022</div>
       <div class="pub-links">
-        <a href="#">Project</a>
-        <a href="#">Video</a>
+        <a href="https://sites.google.com/view/accel-2022-cuhk">Project</a>
+        <a href="https://github.com/linhongbin/accel-cuhk">Code</a>
+        <a href="https://arxiv.org/asb/2210.01406">Paper</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-media">
+      <img src="{{ img }}pkd_before.png">
+      <video autoplay muted loop playsinline>
+        <source src="{{ img }}pkd_1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div>
+      <div class="pub-title">Learning deep nets for gravitational dynamics with unknown disturbance through physical knowledge distillation: Initial feasibility study</div>
+      <div class="pub-authors">Hongbin Lin, Qian Gao, Xiangyu Chu, Qi Dou, Anton Deguet, Peter Kazanzides, K. W. Samuel Au</div>
+      <div class="pub-venue">IEEE Robotics and Automation Letters, 2021 (presented on ICRA 2021)</div>
+      <div class="pub-links">
+        <a href="https://biomedirobotics.com/physical-knowledge-distillation/">Project</a>
+        <a href="https://github.com/linhongbin-ws/DFNN4GCC">Code</a>
+        <a href="https://arxiv.org/abs/2210.01398">Paper</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-media">
+      <img src="{{ img }}gc_before.png">
+      <video autoplay muted loop playsinline>
+        <source src="{{ img }}gc_1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div>
+      <div class="pub-title">A reliable gravity compensation control strategy for dVRK robotic arms with nonlinear disturbance forces</div>
+      <div class="pub-authors">Hongbin Lin, C. W. Vincent Hui, Yan Wang, Anton Deguet, Peter Kazanzides, K. W. Samuel Au</div>
+      <div class="pub-venue">IEEE Robotics and Automation Letters, 2019 (presented on IROS 2019)</div>
+      <div class="pub-links">
+        <a href="https://biomedirobotics.com/gravity-compensation-for-dvrk/">Project</a>
+        <a href="https://github.com/jhu-dvrk/dvrk-gravity-compensation">Code</a>
+        <a href="https://arxiv.org/abs/2001.06156">Paper</a>
       </div>
     </div>
   </div>
